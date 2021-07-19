@@ -12,7 +12,7 @@ inputs:
 module:
   source: git::https://github.com/QualiSystemsLab/aws-workshop-torque.git//terraform/aws-document-db
 
-terraform_version: 0.15.0
+terraform_version: 0.12.8
 
 variables:
   values:
@@ -23,7 +23,7 @@ variables:
     - INSERT_DATA: $ADD_ADMIN_USER
     - DB_NAME: promo-manager
     - COLLECTION_NAME: users
-    - DATA: '[{"email":"admin","password":"admin"}]'
+    - DATA: '[{\"email\":\"admin\",\"password\":\"admin\"}]'
 
 outputs:
     - connection_string
